@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
     allow do
-      origins "localhost:3000", 'https://isaatsu-api.com/', 'https://isaatsu-api.com/api/v1/auth', 'https://isaatsu-api.com/api/v1/' # React側はポート番号3000で作るので「localhost:3000」を指定
+      origins "localhost:3000", 'https://dashing-crisp-d04d86.netlify.app/' # React側はポート番号3000で作るので「localhost:3000」を指定
   
       resource "*",
         headers: :any,
